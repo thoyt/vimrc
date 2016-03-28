@@ -5,7 +5,7 @@ Just clone to .vim and link the contained vimrc to .vimrc
   
     cd ~
     git clone https://github.com/thoyt/vimrc .vim
-    ln -s .vimrc .vim/vimrc
+    ln -s .vim/vimrc .vimrc
 
 Bundles are git submodules. From .vim:
 
