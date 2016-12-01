@@ -2,17 +2,19 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+colorscheme apprentice
 "colorscheme distinguished
 "colorscheme molokai
-colorscheme hemisu
+"colorscheme hemisu
 set background=dark
-
 set number
-
+set noswapfile
+set ruler
+set showcmd
 set term=screen-256color
 
-let g:neocomplete#enable_at_startup = 1
-set completeopt-=preview
+"let g:neocomplete#enable_at_startup = 1
+"set completeopt-=preview
 
 " NERD tree toggle
 map <C-n> :NERDTreeToggle<CR>
@@ -37,4 +39,8 @@ endif
 
 set tabstop=2 shiftwidth=2 expandtab
 
-command DeleteTrailingWhitespace :%s/\s\+$//
+" Use control+j/k/l/h to navigate panes
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
